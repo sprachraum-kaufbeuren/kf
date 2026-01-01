@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SprachRaum Kaufbeuren</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="menu-btn" class="icon-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+  <div class="title">SprachRaum Kaufbeuren</div>
+  <div class="header-right">
+    <div id="lang-btn" class="icon-btn" onclick="toggleLangModal()"><i class="fa-solid fa-globe"></i></div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav id="menu">
+  <div class="nav-item" onclick="navigate('index_de.html')">Home</div>
+  <div class="nav-item" onclick="navigate('konzept_de.html')">Konzeption</div>
+  <div class="nav-item" onclick="navigate('angebote_de.html')">Angebote</div>
+  <div class="nav-item" onclick="navigate('kontakt_de.html')">Kontakt</div>
+</nav>
+
+<div class="lang-modal" id="lang-modal">
+  <div class="lang-btn" onclick="navigate('angebote_de.html')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</div>
+  <div class="lang-btn" onclick="navigate('angebote_en.html')"><img src="https://flagcdn.com/w40/gb.png"> English</div>
+  <div class="lang-btn" onclick="navigate('angebote_fr.html')"><img src="https://flagcdn.com/w40/fr.png"> Français</div>
+  <div class="lang-btn" onclick="navigate('angebote_ar.html')"><img src="https://flagcdn.com/w40/sa.png"> العربية</div>
+  <div class="lang-btn" onclick="navigate('angebote_ru.html')"><img src="https://flagcdn.com/w40/ru.png"> Русский</div>
+</div>
+
+<main> 
+  <h2>Angebote</h2> 
+  <section class="card"> 
+    <h3>Sprachkurse und Nachhilfe:</h3> 
+    <ul> 
+      <li>Deutsch für alle Altersgruppen</li> 
+      <li>Englisch</li> 
+      <li>Französisch</li> 
+      <li>Spanisch</li> 
+      <li>Gebärdensprache</li> 
+      <li>Individuelle Unterstützung (Nachhilfe)</li> 
+      <li>Lernräume, in denen Partizipation und selbstbestimmtes Lernen gefördert werden</li> 
+    </ul> 
+  </section> 
+  <section class="card"> 
+    <h3>Betreuung und Freizeitangebote</h3> 
+    <ul> 
+      <li>Hausaufgabenbetreuung für Kinder</li> 
+      <li>Elterncafé mit Spielen, Austauschmöglichkeiten und gesunden Mahlzeiten</li> 
+      <li>Gemeinschaftsraum: Kicker, Billard, Musikanlage, Getränketheke</li> 
+      <li>Turnhalle für Sportaktivitäten</li> 
+      <li>Außenbereich: Wiese, Sportplatz, kleiner Fischteich</li> 
+    </ul> 
+  </section> 
+  <section class="card"> 
+    <h3>Religiöse und kulturelle Angebote</h3> 
+    <ul> 
+      <li>Gebetsräume für Muslime, Christen und flexibler Raum</li> 
+      <li>Förderung von Interkulturalität, integration und Toleranz</li> 
+      <li>Angebote zur Stärkung von Religionsfreiheit und Respekt</li> 
+    </ul> 
+  </section> <section class="card"> 
+    <h3>Zusatzangebote</h3> 
+    <ul> 
+      <li>Logopädie: Ein Raum für Logopädie-Kurse</li> 
+      <li>Betreuung während der Sprachkurse für Kinder</li> 
+      <li>Partizipation: Besucher können eigene Lernprozesse mitgestalten</li> 
+      <li>Gegebenfalls Praktikumsplätze für junge Erwachsene</li> 
+    </ul> 
+  </section> 
+</main>
+
+<script>
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const langModal = document.getElementById('lang-modal');
+
+function toggleMenu() {
+  menu.classList.toggle('open');
+  overlay.style.display = menu.classList.contains('open') ? 'block' : 'none';
+  langModal.style.display = 'none';
+}
+
+function closeMenu() {
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function toggleLangModal() {
+  langModal.style.display = langModal.style.display === 'flex' ? 'none' : 'flex';
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function navigate(url) {
+  closeMenu();
+  langModal.style.display = 'none';
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

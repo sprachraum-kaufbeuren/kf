@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SprachRaum Kaufbeuren</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="menu-btn" class="icon-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+  <div class="title">SprachRaum Kaufbeuren</div>
+  <div class="header-right">
+    <div id="lang-btn" class="icon-btn" onclick="toggleLangModal()"><i class="fa-solid fa-globe"></i></div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav id="menu">
+  <div class="nav-item" onclick="navigate('index_en.html')">Home</div>
+  <div class="nav-item" onclick="navigate('konzept_en.html')">Concept</div>
+  <div class="nav-item" onclick="navigate('angebote_en.html')">Programs</div>
+  <div class="nav-item" onclick="navigate('kontakt_en.html')">Contact</div>
+</nav>
+
+<div class="lang-modal" id="lang-modal">
+  <div class="lang-btn" onclick="navigate('angebote_de.html')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</div>
+  <div class="lang-btn" onclick="navigate('angebote_en.html')"><img src="https://flagcdn.com/w40/gb.png"> English</div>
+  <div class="lang-btn" onclick="navigate('angebote_fr.html')"><img src="https://flagcdn.com/w40/fr.png"> Français</div>
+  <div class="lang-btn" onclick="navigate('angebote_sp.html')"><img src="https://flagcdn.com/w40/es.png"> Español</div>
+  <div class="lang-btn" onclick="navigate('angebote_ar.html')"><img src="https://flagcdn.com/w40/sa.png"> العربية</div>
+  <div class="lang-btn" onclick="navigate('angebote_ru.html')"><img src="https://flagcdn.com/w40/ru.png"> Русский</div>
+</div>
+
+<main>
+  <section class="card">
+    <h3>Contact:</h3>
+    <ul>
+      <li>Management:  Mrs Nicole Del, Mrs Mika Sauer and Mrs Marta Šoić </li>
+      <li>Adress:   Josefsthaler Straße 2a, 87600 Neugablonz </li>
+      <li>Telephone:   08341 – 837455 23 </li>
+      <li>Fax:    0341 – 87455 22</li>
+      <li>E-Mail:   sprachraum@kaufbeuren-neugablonz.de</li> 
+    </ul>
+  </section>
+</main>
+
+<script>
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const langModal = document.getElementById('lang-modal');
+
+function toggleMenu() {
+  menu.classList.toggle('open');
+  overlay.style.display = menu.classList.contains('open') ? 'block' : 'none';
+  langModal.style.display = 'none';
+}
+
+function closeMenu() {
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function toggleLangModal() {
+  langModal.style.display = langModal.style.display === 'flex' ? 'none' : 'flex';
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function navigate(url) {
+  closeMenu();
+  langModal.style.display = 'none';
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

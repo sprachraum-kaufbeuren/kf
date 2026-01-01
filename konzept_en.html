@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SprachRaum Kaufbeuren</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="menu-btn" class="icon-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+  <div class="title">SprachRaum Kaufbeuren</div>
+  <div class="header-right">
+    <div id="lang-btn" class="icon-btn" onclick="toggleLangModal()"><i class="fa-solid fa-globe"></i></div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav id="menu">
+  <div class="nav-item" onclick="navigate('index_en.html')">Home</div>
+  <div class="nav-item" onclick="navigate('konzept_en.html')">Concept</div>
+  <div class="nav-item" onclick="navigate('angebote_en.html')">Programs</div>
+  <div class="nav-item" onclick="navigate('kontakt_en.html')">Contact</div>
+  <div></div>
+</nav>
+
+<div class="lang-modal" id="lang-modal">
+  <div class="lang-btn" onclick="navigate('angebote_de.html')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</div>
+  <div class="lang-btn" onclick="navigate('angebote_en.html')"><img src="https://flagcdn.com/w40/gb.png"> English</div>
+  <div class="lang-btn" onclick="navigate('angebote_fr.html')"><img src="https://flagcdn.com/w40/fr.png"> Français</div>
+  <div class="lang-btn" onclick="navigate('angebote_sp.html')"><img src="https://flagcdn.com/w40/es.png"> Español</div>
+  <div class="lang-btn" onclick="navigate('angebote_ar.html')"><img src="https://flagcdn.com/w40/sa.png"> العربية</div>
+  <div class="lang-btn" onclick="navigate('angebote_ru.html')"><img src="https://flagcdn.com/w40/ru.png"> Русский</div>
+</div>
+
+<main>
+<div class="hero-buttons">
+  <button class="btn"><a href="Konzeption.pdf">Download as PDF</a></button>
+</div>
+
+<section class="card">
+  <h2>I. Framework Conditions</h2>
+
+  <h3>1. Presentation of the Institution</h3>
+  <p>
+    “SprachRaum Kaufbeuren” is operated by the municipal authority
+    “City of Kaufbeuren” and is a stationary intercultural institution.
+    It is located in the Neugablonz district, which is part of Kaufbeuren.
+    The institution offers appropriate support for people of all ages.
+    It places special emphasis on integration and social interaction.
+    The location was deliberately chosen to ensure a wide range of leisure
+    activities in the immediate surroundings. The institution also places
+    great value on good access to municipal infrastructure.
+  </p>
+</section>
+
+<section class="card">
+  <h3>2. Structure of the Institution</h3>
+  <p>
+    The language center has a well-thought-out spatial and organizational
+    structure that creates optimal conditions for the care of children,
+    adolescents, and young adults.
+  </p>
+
+  <h4>2.1 Facilities:</h4>
+  <ul>
+    <li>Total of 16 rooms:</li>
+    <li>Parents’ café: counter, seating, children’s play area, fresh meals</li>
+    <li>Homework support room with tables and chairs</li>
+    <li>Nursing room (for breastfeeding babies)</li>
+    <li>Prayer rooms: Muslim, Christian, and one flexible room</li>
+    <li>Language rooms: 2 rooms, also used by the social worker</li>
+    <li>Common room: seating, foosball, billiards, drinks counter, sound system</li>
+    <li>Team room for meetings</li>
+    <li>Speech therapy room: option for speech therapy courses</li>
+    <li>Sports hall: various sports equipment, goals, balls</li>
+    <li>Outdoor area: used instead of the sports hall in good weather, large meadow</li>
+    <li>Sports field and small pond</li>
+    <li>Restrooms: 4 gender-neutral restrooms, one women’s restroom</li>
+  </ul>
+
+  <h4>2.2 Location and Surroundings</h4>
+  <ul>
+    <li>The institution is located in an urban area bordering a forest</li>
+    <li>
+      Leisure facilities such as ponds, sports areas, a youth center,
+      and a playground are easily accessible on foot
+    </li>
+    <li>
+      Schools, medical practices, shopping facilities, and sports activities
+      such as handball, swimming, dancing, or martial arts are well connected
+      by public transportation
+    </li>
+  </ul>
+
+  <h4>2.3 Operating and Opening Hours</h4>
+  <p>
+    Regular opening hours: 7:00 a.m. – 8:00 p.m.<br>
+    Consultation hours: Tuesday – Thursday 8:00 a.m. – 12:00 p.m., later by appointment<br>
+    Care provided: 300 days per year
+  </p>
+
+  <h4>2.4 Staff Structure</h4>
+  <ul>
+    <li>5 educators / social workers / special needs caregivers</li>
+    <li>8 assistant / support staff</li>
+    <li>3 director</li>
+    <li>1 cook</li>
+    <li>1 language specialist</li>
+    <li>1 speech therapist</li>
+    <li>3 internship positions</li>
+    <li>1 social worker</li>
+    <li>1 housekeeping staff member</li>
+    <li>1 sign language specialist</li>
+  </ul>
+
+  <h4>2.5 Financing</h4>
+  <p>
+    The financing of our institution is based on a combination of
+    private and public funds:
+  </p>
+  <ul>
+    <li>Public funding from the city</li>
+    <li>Donations from foundations</li>
+    <li>Parental contributions</li>
+    <li>Income from internal institutional activities</li>
+    <li>Voluntary helpers</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>II. Mission Statement</h2>
+
+  <h3>1. Visions and Values</h3>
+
+  <h4>1.1 Nutrition</h4>
+  <p>
+    Vision: “Our vision is a world in which conscious, sustainable,
+    and enjoyable nutrition forms the foundation for health,
+    quality of life, and responsibility toward people and nature.”
+  </p>
+  <p>
+    Mission statement: At our institution “SprachRaum Kaufbeuren,”
+    nutrition represents more than just food intake – it is an
+    expression of culture, community, and mindfulness. We believe
+    that knowledge about healthy and sustainable nutrition empowers
+    people to act independently and responsibly. We aim to create
+    learning environments where enjoyment, education, and awareness
+    of personal health and the environment grow together.
+  </p>
+
+  <h4>1.2 Freedom of Religion</h4>
+  <p>
+    Vision: “A world in which every person can freely choose,
+    practice, or reject their religion – with mutual respect,
+    peace, and without fear of discrimination.”
+  </p>
+  <p>
+    Mission statement: At our institution “SprachRaum Kaufbeuren,”
+    freedom of religion is central to respectful coexistence.
+    We believe that open dialogue about language, culture, and faith
+    fosters understanding and tolerance. This enables individual and
+    social development in which diversity is experienced and lived
+    as a strength.
+  </p>
+
+  <h4>1.3 Participation</h4>
+  <p>
+    Vision: “All visitors to our institution are entitled to
+    actively shape their language learning process and adapt it
+    to their individual pace.”
+  </p>
+  <p>
+    Mission statement: At our institution “SprachRaum Kaufbeuren,”
+    participation is a core principle. Everyone has the opportunity
+    to help shape the institution and use it according to their
+    individual needs. This forms the basis for positive development
+    and enjoyment in learning languages.
+  </p>
+</section>
+
+<section class="card">
+  <h2>III. Professional Concept</h2>
+
+  <h3>1. Target Groups</h3>
+  <p>
+    People of all ages and backgrounds are welcome to join us if they
+    wish to learn a language or need support (German, English,
+    sign language, French, Spanish). Tutoring, language courses,
+    and activities with a focus on language are offered. During
+    language courses, parents have the option to use free childcare
+    services for their children.
+  </p>
+</section>
+
+</main>
+
+<script>
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const langModal = document.getElementById('lang-modal');
+
+function toggleMenu() {
+  menu.classList.toggle('open');
+  overlay.style.display = menu.classList.contains('open') ? 'block' : 'none';
+  langModal.style.display = 'none';
+}
+
+function closeMenu() {
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function toggleLangModal() {
+  langModal.style.display = langModal.style.display === 'flex' ? 'none' : 'flex';
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function navigate(url) {
+  closeMenu();
+  langModal.style.display = 'none';
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

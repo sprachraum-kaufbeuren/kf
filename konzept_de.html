@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SprachRaum Kaufbeuren</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="menu-btn" class="icon-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+  <div class="title">SprachRaum Kaufbeuren</div>
+  <div class="header-right">
+    <div id="lang-btn" class="icon-btn" onclick="toggleLangModal()"><i class="fa-solid fa-globe"></i></div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav id="menu">
+  <div class="nav-item" onclick="navigate('index_de.html')">Home</div>
+  <div class="nav-item" onclick="navigate('konzept_de.html')">Konzeption</div>
+  <div class="nav-item" onclick="navigate('angebote_de.html')">Angebote</div>
+  <div class="nav-item" onclick="navigate('kontakt_de.html')">Kontakt</div>
+  <div></div>
+</nav>
+
+<div class="lang-modal" id="lang-modal">
+  <div class="lang-btn" onclick="navigate('angebote_de.html')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</div>
+  <div class="lang-btn" onclick="navigate('angebote_en.html')"><img src="https://flagcdn.com/w40/gb.png"> English</div>
+  <div class="lang-btn" onclick="navigate('angebote_fr.html')"><img src="https://flagcdn.com/w40/fr.png"> Français</div>
+  <div class="lang-btn" onclick="navigate('angebote_sp.html')"><img src="https://flagcdn.com/w40/es.png"> Español</div>
+  <div class="lang-btn" onclick="navigate('angebote_ar.html')"><img src="https://flagcdn.com/w40/sa.png"> العربية</div>
+  <div class="lang-btn" onclick="navigate('angebote_ru.html')"><img src="https://flagcdn.com/w40/ru.png"> Русский</div>
+</div>
+
+<main>
+<div class="hero-buttons"><button class="btn"><a href="Konzeption.pdf">Download als PDF</a></button>
+</div>
+<section class="card">
+  <h2>I. Rahmenbedingungen</h2>
+
+  <h3>1. Vorstellung der Einrichtung</h3>
+  <p>
+    Der „SprachRaum Kaufbeuren“ wird von einem städtischen Träger
+    „Stadt Kaufbeuren“ betrieben und ist ein stationäre interkulturelle
+    Einrichtung. Sie befindet sich im Stadtteil Neugablonz, welcher zu
+    Kaufbeuren gehört. Die Einrichtung bietet jedem alter die benötigte
+    Förderung. Sie legt besonderen Wert auf die Integration und die
+    Zusammenkunft untereinander. Die Lage wurde so gewählt, dass es viele
+    verschiedene Freizeitmöglichkeiten in der nahen Umgebung gibt. Auch
+    legt die Einrichtung viel wert auf eine gute Anbindung an städtische
+    Infrastrukturen.
+  </p>
+</section>
+
+<section class="card">
+  <h3>2. Struktur der Einrichtung</h3>
+  <p>
+    Die Sprachstätte verfügt über eine durchdachte räumliche und
+    organisatorische Struktur, die optimale Rahmenbedingungen für die
+    Betreuung der Kinder, Jugendliche und junge Erwachsene schafft.
+  </p>
+
+  <h4>2.1 Räumlichkeiten:</h4>
+  <ul>
+    <li>Insgesamt 16 Räume:</li>
+    <li>Elterncafé: Theke, Sitzgelegenheiten, Kinderspielecke, Frische Mahlzeiten</li>
+    <li>Hausaufgabenbetreuung: Ein Raum mit Tischen und Stühlen</li>
+    <li>Stillraum (Zum Stillen von Babys)</li>
+    <li>Gebetsräume: Muslime, Christen und ein flexibler Raum</li>
+    <li>Sprachräume: 2 Räume, auch Nutzung für die Sozialarbeiterin</li>
+    <li>Gemeinschaftsraum: Sitzgelegenheiten, Kicker, Billard, Getränketheke, Musikanlage</li>
+    <li>Teamzimmer: für Besprechungen</li>
+    <li>Logopädieraum: Möglichkeit eines Logopädiekurses</li>
+    <li>Turnhalle: verschiedenste Sportgeräte/Tore/Bälle</li>
+    <li>Außenbereich: Nutzung statt der Turnhalle bei schönem Wetter, große Wiese</li>
+    <li>Sportplatz, kleiner Fischteich</li>
+    <li>Toiletten: 4 geschlechtsneutrale, eine Frauentoilette</li>
+  </ul>
+
+  <h4>2.2 Lage und Umgebung</h4>
+  <ul>
+    <li>Die Einrichtung befindet sich in einer Städtischen Gegend, angrenzend an einen Wald</li>
+    <li>
+      Freizeitmöglichkeiten wie Weiher, Sportanlagen, ein Jugendzentrum sowie
+      ein Spielplatz welcher zu Fuß gut erreichbar ist.
+    </li>
+    <li>
+      Schulen, Arztpraxen, Einkaufs Möglichkeiten sowie sportliche Aktivitäten
+      wie Handball, Schwimmen, Tanzen oder Kampfsport sind gut mit öffentlichen
+      Verkehrsmitteln angebunden
+    </li>
+  </ul>
+
+  <h4>2.3 Betriebs- und Öffnungszeiten</h4>
+  <p>
+    Reguläre Öffnung: 7:00 – 20:00 Uhr<br>
+    Sprechzeiten: Dienstag – Donnerstag 8:00 – 12:00 Uhr, später in Absprache<br>
+    Betreuung: 300 Tage im Jahr
+  </p>
+
+  <h4>2.4 Personalstruktur</h4>
+  <ul>
+    <li>5 Erzieher/Sozialpädagogen/Heilerziehungspfleger</li>
+    <li>8 Assistenzkräfte/Ergänzungskräfte</li>
+    <li>3 Leitung</li>
+    <li>1 Köchin</li>
+    <li>1 Sprachkraft</li>
+    <li>1 Logopäde</li>
+    <li>3 Praktikumsplätze</li>
+    <li>1 Sozialarbeiter</li>
+    <li>1 Haushaltskraft</li>
+    <li>1 Fachkraft für Gebärden</li>
+  </ul>
+
+  <h4>2.5 Finanzierung</h4>
+  <p>
+    Die Finanzierung unserer Einrichtung erfolgt durch eine Kombination aus
+    privaten und öffentlichen Mitteln:
+  </p>
+  <ul>
+    <li>Öffentliche Fördermittel durch die Stadt</li>
+    <li>Spendeneinnahmen durch Stiftungen</li>
+    <li>Beiträgen von Eltern</li>
+    <li>Einnahmen aus einrichtungsinternen Aktionen</li>
+    <li>Ehrenamtliche Helfer</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>II. Leitbild</h2>
+
+  <h3>1. Visionen und Werte</h3>
+
+  <h4>1.1 Ernährung</h4>
+  <p>
+    Vision: „Unsere Vision ist eine Welt, in der bewusste, nachhaltige und
+    genussvolle Ernährung die Grundlage für Gesundheit, Lebensfreude und
+    Verantwortung gegenüber Menschen und Natur bildet.“
+  </p>
+  <p>
+    Leitbild: Bei unserer Einrichtung „Sprachraum Kaufbeuren“ steht Ernährung
+    für mehr als nur Nahrungsaufnahme – sie ist Ausdruck von Kultur,
+    Gemeinschaft und Achtsamkeit. Wir glauben daran, dass Wissen über gesunde
+    und nachhaltige Menschen stärkt, selbstbestimmt und verantwortungsvoll zu
+    handeln. Wir möchten Lernräume schaffen, in denen Genuss, Bildung und
+    Bewusstsein für die eigene Gesundheit und die Umwelt miteinander wachsen.
+  </p>
+
+  <h4>1.2 Religionsfreiheit</h4>
+  <p>
+    Vision: „Eine Welt, in der jede Person ihre Religion frei wählen, ausüben
+    oder ablehnen kann – in gegenseitigem Respekt, Frieden und ohne Angst vor
+    Diskriminierung.“
+  </p>
+  <p>
+    Leitbild: Bei unserer Einrichtung „Sprachraum Kaufbeuren“ steht die
+    Religionsfreiheit im Mittelpunkt eines respektvollen Miteinanders. Wir
+    glauben, dass der offene Austausch über Sprache, Kultur und Glauben
+    Verständnis und Toleranz fördert. Damit ermöglichen wir individuelle und
+    gesellschaftliche Entwicklung, in der Vielfalt als Stärke erlebt und
+    gelebt wird.
+  </p>
+
+  <h4>1.3 Partizipation</h4>
+  <p>
+    Vision: „Alle Besucher unserer Einrichtung sind berechtigt, die Gestaltung
+    ihres Sprachlernprozesses zu leiten und ihrem individuellen Tempo
+    anzupassen.“
+  </p>
+  <p>
+    Leitbild: In unserer Einrichtung „Sprachraum Kaufbeuren“ steht die
+    Partizipation der Besucher im Vordergrund. Jeder hat die Möglichkeit, die
+    Einrichtung mitzugestalten und sie so zu nutzen, wie er sie benötigt. Dies
+    ist die Basis für eine positive Entwicklung und Spaß am Erlernen von
+    Sprachen.
+  </p>
+</section>
+
+<section class="card">
+  <h2>III. Fachliches Konzept</h2>
+
+  <h3>1. Zielgruppen</h3>
+  <p>
+    Zu uns können Menschen jeder Altersklasse und Herkunft kommen, die eine
+    Sprache erlernen möchten oder Hilfe benötigen (Deutsch, Englisch,
+    Gebärdensprache, Französisch, Spanisch). Es werden Nachhilfe,
+    Sprachkurse und Aktionen angeboten, welche Sprache im Fokus haben.
+    Während der Sprachkurse haben die Eltern die Möglichkeit, eine kostenlose
+    Betreuung für ihre Kinder zu nutzen.
+  </p>
+</section>
+
+</main>
+
+<script>
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const langModal = document.getElementById('lang-modal');
+
+function toggleMenu() {
+  menu.classList.toggle('open');
+  overlay.style.display = menu.classList.contains('open') ? 'block' : 'none';
+  langModal.style.display = 'none';
+}
+
+function closeMenu() {
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function toggleLangModal() {
+  langModal.style.display = langModal.style.display === 'flex' ? 'none' : 'flex';
+  menu.classList.remove('open');
+  overlay.style.display = 'none';
+}
+
+function navigate(url) {
+  closeMenu();
+  langModal.style.display = 'none';
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
